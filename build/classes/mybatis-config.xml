@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+  <!-- 将实体类取别名 -->
+  <typeAliases>
+    <!-- 一个一个别名
+    <typeAlias type="com.entity.Grade" alias="Grade"/>
+     -->
+      <!-- 将某个包下的类全部取别名：别名就是类名 -->
+     <package name="com.entity"/>
+  </typeAliases>
+	<!-- 加载sql映射-->
+	<mappers>
+	  
+		<mapper resource="com/mapper/MessageMapper.xml"/>
+		
+	</mappers> 
+
+</configuration>

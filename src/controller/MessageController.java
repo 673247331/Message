@@ -25,13 +25,13 @@ public class MessageController {
 	private MessageService messageService;
 @RequestMapping("show.do")
 @Transactional(propagation = Propagation.NOT_SUPPORTED)
-
+s
 public String show(Model model) throws Exception{
-    //µ÷ÓÃÒµÎñ	 
+    //ï¿½ï¿½ï¿½ï¿½Òµï¿½ï¿½	 
 
 	  List<Message> list=messageService.getAllmessageList();
 	
-    //Ìí¼ÓÊý¾Ý
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	  model.addAttribute("list", list);
 	  return "show.jsp";
 }
@@ -67,7 +67,7 @@ public String addMessage(HttpServletRequest request,Message message) throws Exce
 	@ResponseBody
 	public Map<String, Object> test(){
 		Map<String, Object> map = new HashMap<String, Object>();
-		map.put("name", "ÕÅÈý");
+		map.put("name", "ï¿½ï¿½ï¿½ï¿½");
 		map.put("age", 14);
 		return map;
 	}
